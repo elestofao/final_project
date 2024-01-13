@@ -1,0 +1,14 @@
+<launch>
+  <master auto="start"/>
+  <param name="/use_sim_time" value="true"/>
+ 
+  <node pkg="stage_ros" type="stageros" name="stageros" args="$(find final_project)/worlds2/austria.world" respawn="false" >
+    <param name="base_watchdog_timeout" value="0.2"/>
+  </node>
+
+  <node name = "tb2_motion" pkg="final_project" type="tb2_movement_state.py" output="screen"/>
+  <node name = "flag_color" pkg="final_project" type="DeteccionBanderas.py" output="screen"/>
+  <node name = "linedetect" pkg="final_project" type="linedetect.py" output="screen"/>
+
+</launch>
+
