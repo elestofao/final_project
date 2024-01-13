@@ -9,7 +9,7 @@ Para ejecutar la simulación, se han creado tres circuitos. Los circuitos contie
 ## Compilación
 
 Si no tienes un workspace creado, puedes hacerlo de la siguiente manera:
-```console
+```bash
 mkdir your_ws
 cd your_ws
 mkdir src
@@ -17,7 +17,7 @@ cd src
 ```
 
 Una vez creado el directorio, clona el repositorio en la carpeta _src_, compilalo y actualiza las variables de entorno:
-```console
+```bash
 cd ~/your_ws/src
 git clone https://github.com/elestofao/final_project.git
 cd ..
@@ -27,14 +27,14 @@ source devel/setup.bash
 
 ## Permisos de ejecución
 Una vez hayas compilado, hay que darle permisos de ejecución a los archivos _.py_. Para esto, ve al directorio donde se encuentren los archivos y da permisos a todos los archivos:
-```console
+```bash
 cd ~/your_ws/src/final_project/src
 chmod +x *
 ```
 
 ## Launch
 Para lanzar la simulación en Stage:
-```console
+```bash
 cd ~/your_ws
 roslaunch final_project racing.launch
 ```
