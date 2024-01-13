@@ -16,12 +16,13 @@ mkdir src
 cd src
 ```
 
-Una vez creado el directorio, clona el repositorio en la carpeta _src_ y compilalo:
+Una vez creado el directorio, clona el repositorio en la carpeta _src_, compilalo y actualiza las variables de entorno:
 ```console
 cd ~/your_ws/src
 git clone https://github.com/elestofao/final_project.git
 cd ..
 catkin_make
+source devel/setup.bash
 ```
 
 ## Permisos de ejecución
